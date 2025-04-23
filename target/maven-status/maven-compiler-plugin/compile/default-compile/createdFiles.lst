@@ -1,0 +1,5 @@
+com/spectrum/speed/init/SpeedWebApplicationInitializer.class
+com/spectrum/speed/config/RootConfig.class
+com/spectrum/speed/api/InfoEndpoint.class
+com/spectrum/speed/api/HealthCheckApiController.class
+com/spectrum/speed/config/WebMvcConfig.class
