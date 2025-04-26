@@ -7,28 +7,20 @@ spec:
   selector:
     matchLabels:
       app: speed
-      version: "1.0"
-  strategy:
-    type: Recreate
-  selector:
-    matchLabels:
-      app: speed
-      version: "1.0"
+      version: "3.0"
+  strategy: 
+    type: RollingUpdate
   template:
-    metadata:S
+    metadata:
       labels:
         app: speed
-        version: "1.0"
+        version: "3.0"
     spec:
       containers:
         - name: speedcontainer
-          image: saipavangockerhub/speeddcrk8s:1.0
+          image: saipavangockerhub/speeddcrk8s:3.0
           ports:
             - name: tomcatport
               containerPort: 8080
               protocol: TCP
-# If you want to check application healthy you can use
-# readinessProbe
-#LivnessProve
-#If you want to specfy resource declaratio
-#Resourcedeclaration
+#RollingUpdate
